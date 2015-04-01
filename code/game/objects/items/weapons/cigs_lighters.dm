@@ -430,7 +430,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/weapon/lighter/grayscale/New()
 	var/icon/overlay = new /icon('icons/obj/cigarettes.dmi',"lighter-overlay")
-	overlay.ColorTone(color2hex(GrayScale()))
+	overlay.ColorTone(color2hex(randomColor(1)))
 	overlays += overlay
 
 
