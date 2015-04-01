@@ -72,7 +72,7 @@ Warden
 	minimal_player_age = 7
 
 	default_pda = /obj/item/device/pda/warden
-	default_headset = /obj/item/device/radio/headset/headset_sec/alt
+	default_headset = /obj/item/device/radio/headset/headset_sec
 	default_backpack = /obj/item/weapon/storage/backpack/security
 	default_satchel = /obj/item/weapon/storage/backpack/satchel_sec
 	default_dufflebag = /obj/item/weapon/storage/backpack/dufflebag_security
@@ -167,126 +167,37 @@ Security Officer
 	faction = "Station"
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	supervisors = "the head of security, and the head of your assigned department (if applicable)"
+	supervisors = "the head of security"
 	selection_color = "#ffeeee"
 	minimal_player_age = 7
 	var/list/dep_access = null
 
 	default_pda = /obj/item/device/pda/security
-	default_headset = /obj/item/device/radio/headset/headset_sec/alt
+	default_headset = /obj/item/device/radio/headset/headset_sec
 	default_backpack = /obj/item/weapon/storage/backpack/security
 	default_satchel = /obj/item/weapon/storage/backpack/satchel_sec
 	default_dufflebag = /obj/item/weapon/storage/backpack/dufflebag_security
 
-	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue, access_weapons)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_court, access_weapons) //But see /datum/job/warden/get_access()
+	access = list(access_security, access_brig, access_court, access_sec_doors, access_weapons, access_forensics_lockers, access_medical, access_morgue, access_crematorium, access_research, access_maint_tunnels)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_court, access_weapons) //But see /datum/job/warden/get_access(
 
 /datum/job/officer/equip_items(var/mob/living/carbon/human/H)
-	assign_sec_to_department(H)
-	if(H.client.goodcurity)
-		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security/navyblue(H), slot_w_uniform)
-		H.equip_to_slot_or_del(new /obj/item/clothing/head/beret/sec/navyofficer(H), slot_head)
-
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(H), slot_shoes)
+	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/security/sunglasses(H), slot_glasses)
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/brown(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/clothing/head/beret/sec(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/color/black(H), slot_gloves)
-	H.equip_to_slot_or_del(new /obj/item/device/flash/handheld(H), slot_l_store)
+	H.equip_to_slot_or_del(new /obj/item/clothing/head/helmet(H), slot_head)
 
 	if(H.backbag == 1)
 		H.equip_to_slot_or_del(new /obj/item/weapon/restraints/handcuffs(H), slot_r_store)
-		H.equip_to_slot_or_del(new /obj/item/weapon/melee/baton/loaded(H), slot_l_hand)
+		H.equip_to_slot_or_del(new /obj/item/weapon/restraints/handcuffs(H), slot_l_store)
+		H.equip_to_slot_or_del(new /obj/item/device/flash/handheld(H), slot_l_hand)
 	else
 		H.equip_to_slot_or_del(new /obj/item/weapon/restraints/handcuffs(H), slot_in_backpack)
-		H.equip_to_slot_or_del(new /obj/item/weapon/melee/baton/loaded(H), slot_in_backpack)
+		H.equip_to_slot_or_del(new /obj/item/weapon/restraints/handcuffs(H), slot_in_backpack)
+		H.equip_to_slot_or_del(new /obj/item/device/flash/handheld(H), slot_in_backpack)
 
 	var/obj/item/weapon/implant/loyalty/L = new/obj/item/weapon/implant/loyalty(H)
 	L.imp_in = H
 	L.implanted = 1
 	H.sec_hud_set_implants()
-
-/datum/job/officer/get_access()
-	var/list/L = list()
-	if(dep_access)
-		L |= dep_access.Copy()
-	L |= ..() | check_config_for_sec_maint()
-	dep_access = null;
-	return L
-
-var/list/sec_departments = list("engineering", "supply", "medical", "science")
-
-/datum/job/officer/proc/assign_sec_to_department(var/mob/living/carbon/human/H)
-	if(!sec_departments.len)
-		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/security(H), slot_w_uniform)
-	else
-		var/department = pick(sec_departments)
-		sec_departments -= department
-		var/destination = null
-		var/obj/item/clothing/under/U = new /obj/item/clothing/under/rank/security(H)
-
-		if(H.client.goodcurity)
-			U = new /obj/item/clothing/under/rank/security/navyblue(H)
-
-		switch(department)
-			if("supply")
-				default_headset = /obj/item/device/radio/headset/headset_sec/alt/department/supply
-				dep_access = list(access_mailsorting, access_mining)
-				destination = /area/security/checkpoint/supply
-				U.attachTie(new /obj/item/clothing/tie/armband/cargo())
-			if("engineering")
-				default_headset = /obj/item/device/radio/headset/headset_sec/alt/department/engi
-				dep_access = list(access_construction, access_engine)
-				destination = /area/security/checkpoint/engineering
-				U.attachTie(new /obj/item/clothing/tie/armband/engine())
-			if("medical")
-				default_headset = /obj/item/device/radio/headset/headset_sec/alt/department/med
-				dep_access = list(access_medical)
-				destination = /area/security/checkpoint/medical
-				U.attachTie(new /obj/item/clothing/tie/armband/medblue())
-			if("science")
-				default_headset = /obj/item/device/radio/headset/headset_sec/alt/department/sci
-				dep_access = list(access_research)
-				destination = /area/security/checkpoint/science
-				U.attachTie(new /obj/item/clothing/tie/armband/science())
-
-		H.equip_to_slot_or_del(U, slot_w_uniform)
-		var/teleport = 0
-		if(!config.sec_start_brig)
-			if(destination)
-				if(!ticker || ticker.current_state <= GAME_STATE_SETTING_UP)
-					teleport = 1
-		if(teleport)
-			var/turf/T
-			var/safety = 0
-			while(safety < 25)
-				T = safepick(get_area_turfs(destination))
-				if(T && !H.Move(T))
-					safety += 1
-					continue
-				else
-					break
-		H << "<b>You have been assigned to [department]!</b>"
-		return
-
-/obj/item/device/radio/headset/headset_sec/department/New()
-	wires = new(src)
-	secure_radio_connections = new
-
-	initialize()
-	recalculateChannels()
-
-/obj/item/device/radio/headset/headset_sec/alt/department/engi
-	keyslot = new /obj/item/device/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/device/encryptionkey/headset_eng
-
-/obj/item/device/radio/headset/headset_sec/alt/department/supply
-	keyslot = new /obj/item/device/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/device/encryptionkey/headset_cargo
-
-/obj/item/device/radio/headset/headset_sec/alt/department/med
-	keyslot = new /obj/item/device/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/device/encryptionkey/headset_med
-
-/obj/item/device/radio/headset/headset_sec/alt/department/sci
-	keyslot = new /obj/item/device/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/device/encryptionkey/headset_sci
