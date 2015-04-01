@@ -1,0 +1,1223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Hippie Station 13 Changelog</title>
+  <link rel="stylesheet" type="text/css" href="changelog.css">
+  <base target="_blank" />
+  <script type='text/javascript'>
+
+	function changeText(tagID, newText, linkTagID){
+		var tag = document.getElementById(tagID);
+		tag.innerHTML = newText;
+		var linkTag = document.getElementById(linkTagID);
+		linkTag.removeAttribute("href");
+		linkTag.removeAttribute("onclick");
+	}
+
+  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<table align='center' width='650'><tr><td>
+<table align='center' class="top">
+	<tr>
+		<td valign='top'>
+			<h1>Hippie Station 13 Changelog!</h1>
+			<p><div align='center'><font size='3'><a href="http://www.hippie-station-13.com/forums">Forum</a> | <a href="https://github.com/HippieStationCode/HippieStation13Code">Github</a></font></div></p>
+			</td>
+	</tr>
+</table>
+
+<table class='test' align='center' class="top" bgcolor="#FFFFF" >
+	<tr>
+		<td valign='top'>
+			<font size='2'><b>Host:</b> Admiral_Hippie <br></font>
+			<font size='2'><b>Head Admins:</b> Foos, Looping, Chronitonity</font><br>
+			<font size='2'><b>Head Coders:</b> Scooterkid74, Redswandir<br></font>
+			<br>
+			<font size='2'><b>Game Masters:</b> TDcoolguy300, DrunkenFlyingDemoman, Nokington, Scooterkid74, LordKruor, TheMostCleverBot, Dan Hibiki<br></font>
+			<font size='2'><b>Game Admins:</b> TeamStab, Kalameeet, PredGD, Katsukai1, Zadeon, Neemy, Medal12, Mocheeze, Limboo, ChronicPwnage, Crystalwarrior160, Augphlosion, Whitefox08, Lowresolution, Vievoora, Kokojo, Zyzarda, Nexendia, CobyB, Snake2512, LaWoGGamer, Solar Marine<br></font>
+			<br>
+			<font size='2'><b>Coding Team:</b> Nexendia, Scooterkid74, Redswandir, Kokojo, Whitefox08, Crystalwarrior<br></font>
+			<font size='2'><b>Spriting Team:</b> Nienhaus, Consgrove, 1block, Crystalwarrior<br></font>
+			<font size='2'><b>Mapping Team:</b> Barry, Kokojo, WhiteFox08<br></font>
+			<font size='2'><b>Mentors:</b> Krain7k, Cafaling, Apoll2947, Skitzofranik, Faceplant-Kun, HappyMacabre, Neoplague, McHatters, Sutskoen, Moiz, UtahRapter3, Somethings, OgardTheViking, Jackrip<br></font>
+
+		</td>
+	</tr>
+</table>
+<p>
+<!-- NOTE TO UPDATERS!! Please only list things which are important to players.
+Stuff which is in development and not yet visible to players or just code related
+(ie. code improvements for expandability, etc.) should not be listed here. They
+should be listed in the changelog upon commit tho. Thanks. -->
+
+<!-- You can simply add changelogs using AddToChangelog.exe -->
+
+<!-- DO NOT REMOVE OR MOVE THIS COMMENT! THIS MUST BE THE LAST NON-EMPTY LINE BEFORE THE LOGJS #ADDTOCHANGELOGMARKER# -->
+
+<div class='commit sansserif'>
+
+	<font style="font-size:68px" color=ff00ff>A</font><font style="font-size:68px" color=ff00cc>P</font><font style="font-size:68px" color=ff0099>R</font><font style="font-size:68px" color=ff0066>I</font><font style="font-size:68px" color=ff0033>L</font> <font style="font-size:68px" color=ff0000>F</font><font style="font-size:68px" color=ff3300>O</font><font style="font-size:68px" color=ff6600>O</font><font style="font-size:68px" color=ff9900>L</font><font style="font-size:68px" color=ffcc00>S</font><font style="font-size:68px" color=ffff00>!</font><font style="font-size:68px" color=ccff00>!</font><font style="font-size:68px" color=99ff00>!</font><br>
+	<font size='2'>A majority of this update was from public pulls from /tg/station's git.</font><br>
+	<font size='5'><b>OH AND HIPPIE STATION 13 IS NOW OPEN SOURCE!</b></font><br>
+	<h2 class='date'>1 April 2015</h2>
+
+	<h3 class='author'>As seen on /tg/station13 with some tweaks and changes, + some original features!</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'><font size='1'>Thanks to these dedicated coders: Incoming5643, sawu-tg, Mandurrrh, dannno, Boggart, Xhuis, paprka, walterje, drynwyn, Jordie0608, Menshin, TZK13, RemieRichards, Firecage, xxalpha, GunHog, JJRcop.</font></li>
+	</ul>										<!-- I will remove the "APRIL FOOLS" text after first week of april then we will be back to normal changelog -->
+												<!-- I mean it!!  I will murder anyone who touches my babby!  ~Nexendia -->
+	<h3 class='author'>Nexendia updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'><font size='6'>Dragon Dildos</font></li>
+		<li class='rscadd'>Added in Deadspace style hardsuit helmets.. They are stored inside the Hardsuit and you now have a button to toggle the helmet on and off - IE No more hardsuit helmet without a hardsuit..</li>
+		<li class='rscadd'>Added in the Chronosuit and Gun!  Though it is only AdminSpawnable!!</li>
+		<li class='rscadd'>re-Added the JaniCart and Secway - This will be interesting..</li>
+		<li class='rscadd'>Added in the Owl and Griffin Costumes and Owl Hardsuit - Currently they are AdminSpawnable until the Sprites are fixed!</li>
+		<li class='rscadd'>Added the ability to skin Monkeys and Aliens - Alien and Monkey skins are used in making their respective costumes.</li>
+		<li class='rscadd'>Admins can now re-admin themselves after using the Deadmin Command.</li>
+		<li class='rscadd'>Added in a Butterfly crate to Supply Shuttle!</li>
+		<li class='rscadd'>Added in Engineer Workboots!</li>
+		<li class='rscadd'>Added in Engineer Advanced Mesons!</li>
+		<li class='rscadd'>Added a GamePanel Search button - Now we can spawn shit ontop of you easier!</li>
+		<li class='rscadd'>Added in Megaphones!!</li>
+		<li class='rscadd'>Added in Holotape for both Security and Engineering!! - To use or pass through them you need the required access or be walking, You can also remove Holotape by attacking it with the holotape projector - Crystal fixed some buggies but I added them in!</li>
+		<li class='tweak'>Changed F1 to OOC and F4 to MentorSay!</li>
+		<li class='tweak'>You will now hear the voice of the Chaplains god when recieving a SubtleMessage.</li>
+		<li class='tweak'>Ripping open packages makes a sound now!</li>
+		<li class='tweak'>Updated this Changelog~</li>
+	</ul>
+
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+        <li class='rscadd'>Added Alt+Click functionality! Alt+Click your pda to drop your ID</li>
+        <li class='rscadd'>Added Sprites to show how many rods you have!</li>
+        <li class='rscadd'>Added Nitrile Gloves, now you can heist!</li>
+        <li class='rscadd'>Fire Alarms and Air Alarms are now Emaggable, If you Emag the fire Alarm it will disable temperature check and prevent firedoors from closing. If you emag the Air Alarm it will allow a new option in the vent control called FLOOD, in witch disables pressure checks.</li>
+        <li class='rscadd'>Added New PAI Sprites!</li>
+        <li class='rscadd'>Wizards and Apprentices will now show hud Icons for Antags.</li>
+        <li class='rscadd'>Added effects for the following mineral floors: Plasma, Uranium, Bananium.</li>
+    </ul>
+
+    <h3 class='author'>Kokojo updated:</h3>
+   	<ul class='changes bgimages16'>
+    	<li class='rscadd'>Added in a bunch new AI Core sprites!</li>
+    	<li class='rscadd'>Wizards mirror to Wizard den - Whole bunch of stuff you can do with this Mirror!</li>
+    	<li class='rscadd'>Added a send-back-to-lobby button that basically lets the person you send to lobby respawn.</li>
+    	<li class='rscadd'>A cute wittle Carp Pwushie mob that follows you until the end of time~</li>
+
+    </ul>
+
+    <h3 class='author'>Scooters updated</h3>
+    <ul class='changes bgimages16'>
+    	<li class='rscadd'>Wizard now has a Necromancer Stone that allows the user to bring 3 people back to life as a skeleton.</li>
+    	<li class='rscadd'>Hostile Mob AI - They now just got stronker!</li>
+    	<li class='rscadd'>Belt Overlays - Ooooooo fancy!</li>
+    	<li class='tweak'>A bunch of Wizard fixes!</li>
+	</ul>
+
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Implemented an embedding system similar to the one seen on /tg/station, however it's mostly rewritten and suited for our medical system! <a href="http://wiki.hippie-station-13.com/Guide_to_medicine#Embedded_items">Wiki info</a></li>
+		<li class='rscadd'>Implemented staple guns! Staples can be created with rods. You can put a paper in the staplegun to staple that paper to something else, including floors, walls and even people!</li>
+		<li class='rscadd'>Added siren helmets to the hacked SecTech vending machine!</li>
+		<li class='rscadd'>Ctrl+Click functionality additions: Ctrl + Clicking uniforms toggles their suit sensors, Ctrl + Clicking PDA's takes their pen out</li>
+		<li class='rscadd'>Alt+Click functionality additions: Alt+Clicking uniforms will roll down their sleeves, Alt+Clicking cables will create cable coil</li>
+		<li class='rscadd'>RD Console and autolathe now have a search bar.</li>
+		<li class='rscadd'>You can now buckle people to pipes if they're restrained! You can also grill them with HE Pipes.</li>
+		<li class='rscadd'>Mobs can now spread fire between each other! It splits your "firestacks", aka the amount of times you have to roll.</li>
+		<li class='rscadd'>Implemented martyr objective! Basically you'll be tasked to die a glorious death after you complete your other objectives.</li>
+		<li class='rscadd'>Stunbaton has a chance to stun when thrown. This can backfire horribly if BYOND RNG hates you.</li>
+		<li class='rscadd'>Tabling someone on the glass table has a chance to IMPALE THEM WITH A GLASS SHARD. Owch.</li>
+		<li class='tweak'>If you pull someone over the shards when they're lying down and have no uniform, the shard damage will apply to the random bodypart instead with different flavortext.</li>
+		<li class='tweak'>Gibbing now throws all the embedded items out, as well as held items.</li>
+		<li class='tweak'>Cig lighters have slightly higher illumination.</li>
+		<li class='tweak'>Scalpels/surgical drills can stab your eyes out now</li>
+		<li class='tweak'>Bleeding chance buffed for all weapons</li>
+		<li class='tweak'>Targeting will actually be important when throwing stuff now. If you throw something at someone else's head, it will have 50% chance to hit that person's head. Otherwise it'll pick a random limb.</li>
+		<li class='bugfix'>Possibly fixed the fact that you could be assigned both protect and assasinate objectives for the same person as an antag. Tell me if that still happens.</li>
+		<li class='bugfix'>Fixed some buggies with Holotapes</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>17 March 2015</h2>
+	<h3 class='author'>Nexendia updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>Fixed the massive fuckup that happened..</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>10 March 2015</h2>
+	<h3 class='author'>Nexendia updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Changed F1 from Adminhelp to msay - Never really needed a hotkey for Adminhelp</li>
+		<li class='rscadd'>Added a Mentorhelp button to the Help Menu</li>
+		<li class='tweak'>Removed drunk effects from Holy Water.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>9 March 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Tweaked IPC station a bit, as well as Russian Station</li>
+		<li class='rscadd'>Mining station now has a keg of beer.</li>
+		<li class='rscadd'>A new art vendor in the art departement.</li>
+		<li class='bugfix'>The gun russian on Russian station now gives the gun he shoots you with, not the detective's.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>8 March 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Made recycler actually gib</li>
+		<li class='bugfix'>Fixed up the AI objective, it will only tell you to steal intelicard if no AI's spawned in</li>
+		<li class='bugfix'>You won't leave bloodtrails when buckled and dragged anymore, making rollerbeds finally useful for things other than self surgery</li>
+		<li class='rscadd'>Added baseball bats! Deflect items thrown at you by having throw intent on and having a baseball bat in your active hand, bat items by throwing them with bat in inactive hand</li>
+		<li class='rscadd'>Made metal baseball bat creatable in autolathe and wooden bats creatable from wooden sheets</li>
+		<li class='rscadd'>You can also make baseballs in hydroponics biogenerator!</li>
+		<li class='rscadd'>Added two new undershirts!</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>4 March 2015</h2>
+	<h3 class='author'>Nexendia updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>reverted Paprika's removal of Dermal Armor on /tg/</li>
+		<li class='rscadd'>Made it possible to now implant bombs from Toxins</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>3 March 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Tweaked the SuperMatter - It should be possible to run now, even on stock cooling</li>
+		<li class='bugfix'>You can now eject the SuperMatter</li>
+		<li class='bugfix'>Fix Rapid Piping Device</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>28 February 2015</h2>
+	<h3 class='author'>atlantique updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Emag the screambot for more screams! You can also toggle different scream sounds on and off.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>28 February 2015</h2>
+
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>Fix Rev and Malf modes</li>
+		<li class='bugfix'>Fix a bunch of buggies</li>
+	</ul>
+
+	<h3 class='author'>atlantique updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Vox preference. You can now enable or disable whether you hear the audio.</li>
+	</ul>
+
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Frightbots and Screambots fully implemented! Thanks to block1 for the original screambot sprites</li>
+		<li class='rscadd'>Creating frightbots: Get chasis from sheets of metal, apply station bounced radio on chasis, get frightbot</li>
+		<li class='rscadd'>Creating screambots: Get chasis from sheets of metal, apply lit welder on chasis, apply robolimb on chasis, get screambot</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>27 February 2015</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>IPCs can now Ping and Buzz! #gamechanging</li>
+	</ul>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>Should have fixed pipes sending you to darkland.</li>
+		<li class='bugfix'>Supermatter buttons now easier to use.</li>
+		<li class='bugfix'>Better lorebooks thanks to Nocchi.</li>
+	</ul>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='experiment'>Blackmagic has been added to the code, massive performance boost!</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>26 February 2014</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added new things in space.</li>
+		<li class='bugfix'>Fixed some minor problems with the map</li>
+		<li class='bugfix'>Clown office finnaly connected to the grid</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>24 February 2014</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>Fixed the Singularity cameras not being EMP proof.</li>
+		<li class='bugfix'>Fixed Engineering's external airlocks not using the correct access</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>23 February 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Suit sensors are now on by default. Make sure to change their setting if you don't want to be tracked!</li>
+		<li class='tweak'>Tweaks to bloodloss display on most equipment, it is not measured in percentage instead of a value from 0 to 1</li>
+		<li class='rscadd'>Xenomorph butts. Xeno buttbots. Xenomorph butt surgery.</li>
+		<li class='rscadd'>Improved crew monitoring display</li>
+		<li class='rscadd'>Added speech bubbles for bots</li>
+		<li class='rscadd'>Added a new "stamina" display. Don't freak out, people, it's just a way to see your holodamage/disabler damage/boxing gloves damage/etc.</li>
+		<li class='rscadd'>Added mountain bags as a character pref</li>
+		<li class='rscadd'>Added a pref for "auto-throw" that happens when you activate a grenade</li>
+		<li class='rscadd'>Sprays can now affect the objects you spray them on so you can now clean walls!</li>
+		<li class='rscadd'>Bloodloss display improved for most scanners. It is now shown in 'percentage' instead of value from 0  to 1.</li>
+	</ul>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>SM Control Room has better access to the SM engine room</li>
+		<li class='bugfix'>Fixed wires not under Radation Collectors at the Singularity</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>21 February 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added the full, memey, pain in the arse supermatter</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>20 February 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Janitor now spawns with a useless pornmag item in his locker. Yay?</li>
+		<li class='rscadd'>Alternative janitor costume added to his locker!</li>
+		<li class='rscadd'>New uplink item - syndicate first aid, contains robust chempatches.</li>
+		<li class='rscadd'>New traitor objective</li>
+		<li class='rscadd'>Added alien butts and buttbots</li>
+		<li class='rscadd'>Added butt surgery</li>
+		<li class='bugfix'>Fixed butts counting as cavity implants.</li>
+		<li class='bugfix'>Medical belts can now hold gauzes and chempatches.</li>
+	</ul>
+	<h2 class='date'>19 February 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Space is now 382 * 382 instead of 255*255 to allow for more spess stuff</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>19 February 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Space is now 382 * 382 instead of 255*255 to allow for more spess stuff</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>18 February 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Bleeding is in-game! The wiki is updated with new info <a href="http://wiki.hippie-station-13.com/index.php?title=Guide_to_medicine#Blood_loss">here</a></li>
+		<li class='rscadd'>Bullets can get stuck in limbs to cause increasing blodloss. <a href="http://wiki.hippie-station-13.com/index.php?title=Surgery#Bullet_Removal">Here's how to perform bullet surgery</a></li>
+		<li class='rscadd'>Chemical patches added! You can inject various chemicals in them with syringes. Note that it transfers only 1/4 of chemicals to bloodstream, however, TOUCH reactions are multiplied by 2!</li>
+		<li class='rscadd'>Edged weaponry is more likely to cause bloodloss</li>
+		<li class='rscadd'>New reagents: Brutanol and Ointment! <a href="http://wiki.hippie-station-13.com/index.php?title=Guide_to_chemistry#Brutanol">Here's how to mix them</a></li>
+		<li class='tweak'>Surgery computers now give more information regarding the surgery to make them more useful. They also report bloodloss severity.</li>
+		<li class='tweak'>You can examine people to see if they have any ongoing surgeries.</li>
+		<li class='tweak'>Chemical patches and gauzes are creatable in hydroponics biogenerators! Now you can have a fair trade for mutagen.</li>
+		<li class='bugfix'>Fixed surgery computer being too far from the surgical bed</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>13 February 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Trying a new permabrig settup.</li>
+		<li class='tweak'>The first bottle of Vodka is now a proper reward. Sorta.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>10 February 2015</h2>
+	<h3 class='author'>Jamie Hankins updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Add Advanced Pinpointer to the Uplink!</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>9 February 2015</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>The Medbay reception desk button opens the correct doors.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>9 February 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>GOOFBALL'S COOKING FULLY IMPLEMENTED! Check kitchen for multitude of new machinery for you to experiment with! (Deepfryers are back.)</li>
+		<li class='rscadd'>Gun closets added to armory, all guns are contained in them now</li>
+		<li class='soundadd'>Sound overhaul: guns, wielding two-handed items, and door beeps!</li>
+		<li class='soundadd'>Burp sound has randomised pitch now.</li>
+		<li class='tweak'>Collapsed rollerbeds (drag and drop rollerbed onto yourself) can now be stuffed in backpack.</li>
+		<li class='rscadd'>New lobby image + title music! Woo!</li>
+		<li class='tweak'>Flickering lights tweaked, their sound volume was reduced</li>
+		<li class='tweak'>Increased reagent counts for cigs</li>
+		<li class='tweak'>Butt dismember chance nerfed for normal farts</li>
+		<li class='bugfix'>Medbay's door buttons are now working correctly, missing rubber shutters are now in place</li>
+		<li class='bugfix'>Diseases completely fixed - now the diesases that SHOULDN'T auto-cure (like appendicitis and Ass-X) will not auto-cure</li>
+		<li class='imageadd'>Emitter and disabler beam sprites are now much better than before.</li>
+		<li class='sounddel'>Push sound reverted to the original thudswoosh</li>
+		<li class='rscdel'>Duct tape removed from orderable uplink items - was unneccesary since duct tape is easily accessible</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>5 February 2015</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>Fixed a issue where the Armory floor tiles couln't be removed.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>4 February 2015</h2>
+	<h3 class='author'>Redswandir updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Fixes an issue where you can be crushed by weak-ass bombs. Basically:</li>
+		<li class='rscadd'>You now get launched less the farther you are from the bomb.</li>
+        <li class='rscadd'>You fly slower the farther you are from the bomb.</li>
+	</ul>
+	<h3 class='author'>Scoot updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Explosions will now throw you around if you are in light force range.</li>
+		<li class='rscadd'>Added a Short-Ranged Subspace Artillery computer to the nuke op shuttle. Carpet bombs 10 random locations on the station. Buy disk with telecrystals.</li>
+		<li class='rscadd'>Added special snowflake menu. Get awarded species to play as by admins. Human and Lizard are defaults.</li>
+		<li class='bugfix'>Removed AI lawcap.</li>
+		<li class='rscadd'>Added Anomaly: Electric Storm. You'll never know where lightning strikes.</li>
+	</ul>
+    <h3 class='author'>Sonador updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='soundadd'>New Nuclear Emergency antag win sound.</li>
+		<li class='soundadd'>New Malfunction antag win sound.</li>
+	</ul>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Bloodfleas added in as a random event!</li>
+		<li class='rscadd'>Dartboard can now be wrenched and moved.</li>
+		<li class='rscadd'>Magic 8-ball toy added! Space Carp plushie now has coot as foq squeak, too.</li>
+		<li class='tweak'>Events tweaked: Radiation Storm now has camera shaking and an alarm sound, Meteor showers are now classed</li>
+		<li class='tweak'>MORE CIG TWEAKS! Uplift Smooth made robust.</li>
+		<li class='tweak'>Lights can now flicker on creation, similar to broken lights. Bad lights can be fixed by replacing them with a light replacer or simply re-inserting a light.</li>
+		<li class='tweak'>Lights will also flicker if you hit them a bunch of times without destroying.</li>
+		<li class='tweak'>Nerfed the fuck out of Chloral. It now has to exceed 15 units to start toxin damage, making 30u the ideal amount to kill someone again.</li>
+		<li class='soundadd'>Crunch sound added for getting door crunched!</li>
+		<li class='soundadd'>New push sound</li>
+		<li class='soundadd'>Footstep sounds Different turfs have different materials.!</li>
+		<li class='soundadd'>New push sound effect</li>
+		<li class='soundadd'>Crayons have a chalk sound effect</li>
+		<li class='soundadd'>Flickering now has sound effects!</li>
+	</ul>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Rotated computers around the station.</li>
+		<li class='tweak'>Minor map tweak.</li>
+		<li class='tweak'>Minor space object tweak.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>2 February 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added cig vendor to speakeasy</li>
+		<li class='rscadd'>Added a special cig vendor to brig - contains more robust packets than anywhere else!</li>
+		<li class='tweak'>Cigarettes were tweaked: nicotine addiction nerfed, cigpack contents were changed completely (no cigpacks contain toxic materials now, other than carp classic. Robust cigs actually contain robust chemicals now, too.)</li>
+		<li class='tweak'>Cigarettes can now be grinded in All-in-One Grinder</li>
+		<li class='tweak'>Lit cigs and nicotine will now prevent coughing and nervousness disabilities side effects. Obviously won't remove the disabilities itself.</li>
+		<li class='tweak'>Shady Jim's cigpack can now be acquired through a hacked vendor</li>
+		<li class='bugfix'>Fixed security helmet not showing up on mob</li>
+		<li class='imageadd'>Computer sprites replaced by newer ones done by Mono! They have directions and stuff. Tell Crystalwarrior160 if any of the computer sprites don't show up or they're acting weird.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>1 February 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Massive cigarette system overhaul! Nicotine chemical added, most cigarette brands now contain unique chemicals.</li>
+		<li class='rscadd'>Nicotine is the first addictive chemical. If you neglect smoking, eventually you'll end up with toxin damage.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>31 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Brig blastdoors are back! They replace the terrible reinforced windows. http://puu.sh/fikH9/78c9395242.png</li>
+	</ul>
+	<h3 class='author'>Redswandir updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscdel'>Wands of Death no longer exist. Dying instantly in a game where you might be out for around 40 minutes at that point is really shit game design especially in an laggy RNG fuckfest like SS13.</li>
+		<li class='rscadd'>Added new emotes to ooc: Twitch edition 1! Try out :frankerz:, :failfish:, :winwaker:, :salt: and :op: for a more cancerous OOC!</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>30 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Wizard objectives are no longer shit. They have one more objective than traitors and actually use correct objective code.</li>
+		<li class='tweak'>You won't be able to examine food and drinks for reagents anymore. It's replaced with "X is full/empty/etc.!" for drinks.</li>
+		<li class='rscadd'>Damp rag has been reworked and fixed. Now it actually transfers reagents to stuff when you clean with it. It acts like a mop with 5 unit limit. Also, you can smother people with it if you target mouth and have grab intent - will auto grab with your free hand. You have to click the person multiple times to transfer reagents properly when smothering.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>29 January 2015</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Tweaked some stuff in the Medbay Reception area.</li>
+                                <li class='rscadd'>Added a Cell Carger in Medbay for the Defibrillator</li>
+		<li class='tweak'>Changed Chemistry reinforced walls to regular walls.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>29 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Water flower can now be toggled to spray 1 or 10 units</li>
+		<li class='tweak'>Water flower can be used without having it in-hand</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>26 January 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added Speakeasy in maintenance</li>
+		<li class='tweak'>Small fixes.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>26 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Mime statue buff</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>26 January 2015</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>You can now open the viewport blast doors seperate from the entrance blast door in Telescience. </li>
+		<li class='bugfix'>Fixed Chemistry APC not being properly linked to the Chemistry area.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>25 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Job-specific traitor items added! Only Chemist, Assistant, Bartender and Chaplain have their job-specific contraband. Feel free to suggest more for other jobs!</li>
+		<li class='bugfix'>Now you will always have space ambience on space turfs.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>25 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>You can now tell when people are in 'newcrit' by examining them</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>24 January 2015</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added Catwalks around the station</li>
+		<li class='bugfix'>More Medbay fixes </li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>23 January 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Re-added old medbay.</li>
+		<li class='tweak'>Secure crate now have normal HP.</li>
+		<li class='tweak'>Small fixes all around.</li>
+	</ul>
+</div>
+<div class='commit sansserif'>
+	<h2 class='date'>23 January 2015</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Re-added the Wraslen Ring from the old station and slapped it next to Holodeck.</li>
+		<li class='tweak'>Replaced SWAT Helmets with Normal Helmets being in the Armory</li>
+		<li class='tweak'>Added the new Catwalk Turf on all of the Solars.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>23 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>The ready button can now be spammed at round start</li>
+		<li class='rscadd'>Mentors are now able to observe mentees in order to supply more <i>help</i></li>
+		<li class='tweak'>Interface (HTML) panels now have similar click delays to the rest of the game</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>22 January 2015</h2>
+	<h3 class='author'>WhiteFox08 updated:</h3>
+	<ul class='changes bgimages16'>
+                <li class='bugfix'>Added missing Items to the Armory.</li>
+                <li class='rscadd'>Added Meta-ish Armory whow.</li>
+	</ul>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>22 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>More stuff to explore in spess, yay!</li>
+		<li class='rscadd'>More spesslore related things.</li>
+		<li class='bugfix'>Space ambience loop will now always play when you're on a space turf, regardless of area.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>22 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Syndicate shotguns no longer spawn with stun slugs by default. They spawn with buckshot now. (What the fuck, TG?)</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>21 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>HoP can no longer be a traitor or changeling.</li>
+		<li class='rscadd'>Derelict station has new loot!</li>
+		<li class='rscadd'>Clown Planet lives.</li>
+		<li class='tweak'>Ambient loop tweaks</li>
+		<li class='bugfix'>Admin midis are no longer overwritten by ambient loops</li>
+		<li class='bugfix'>Everything bananium is now fixed.</li>
+		<li class='bugfix'>Derelict station windows fixed</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>21 January 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added a backstory to Prototype station. In game only..</li>
+		<li class='tweak'>Multiple little fixes on the map.</li>
+		<li class='bugfix'>Fixed the ore redemtion machine.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>21 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Meatpizzas.</li>
+		<li class='tweak'>Tweaks to ambient loop system</li>
+		<li class='tweak'>health_treshold_critfaint variable reduced to -50 (damage required to faint while in newcrit)</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>20 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='soundadd'>Fire now has sound!</li>
+		<li class='soundadd'>Flamethrower sound re-added!</li>
+		<li class='soundadd'>There's a sound when you get lit on fire!</li>
+		<li class='soundadd'>SNEEZE SOUNDS! Extremely cute femsneezes, too.</li>
+		<li class='soundadd'>Lots, lots, LOTS of new ambience loops.</li>
+		<li class='rscadd'>Some of Facepunch Station 13 clothes are ported! (Cosby is back.)</li>
+		<li class='rscadd'>Detective coat now can be toggled, all variants included.</li>
+		<li class='rscadd'>Paper can now be ignited!</li>
+		<li class='bugfix'>Medical belts can now fit a crew monitoring device</li>
+		<li class='imageadd'>Fixed security armor/jumpsuit sprites to not be shit</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>20 January 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added the *REDACTED* on z-level 7.</li>
+		<li class='tweak'>Fixed some problems with prototypestation</li>
+		<li class='tweak'>Multiple little fixes on the map.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>18 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='soundadd'>Added a new ambient sound to general ambience</li>
+		<li class='soundadd'>Replaced ship ambience with old one, no more annoying tone!</li>
+		<li class='rscadd'>Medics now spawn with portable crew manifests.</li>
+		<li class='rscadd'>Defib COMPLETELY fixed. It should work perfectly now.</li>
+		<li class='rscadd'>Nerfed poly/sulphuric acid. Now polyacid smoke won't instamurderfuck you.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>18 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Mentors have a custom OOC colour now</li>
+		<li class='tweak'>Brings back old wiring</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>17 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Ctrl-Click now toggles pulling / not pulling an object</li>
+		<li class='rscadd'>Apdded drunki-spesecih</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>17 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added a new mentorship system which uses a new tab called "Mentor", Admins will pick out mentors.</li>
+		<li class='rscadd'>Added the Rapid Crate Sender(RCS), Go up to a "cargo telepad" one can be found in cargo and more can be brought from cargo, click the "cargo telepad" with the RCS to calibrate the RCS against that pad. Now go do your mining and use the mining furnace stuff to smelt all of your stuff and then teleport the crate to cargo using the RCS. The crate you teleport must be a "mining crate" and it must be closed when trying to teleport.</li>
+		<li class='tweak'>Made the smelter at mining able to take an ID through the computer so you are able to get points using that as well as the shitty "ore redemption machine"</li>
+		<li class='imageadd'>New crate called mining crate which can be teleported.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>17 января 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added a new mentorship system which uses a new tab called "Mentor", Admins will pick out mentors.</li>
+		<li class='rscadd'>Added the Rapid Crate Sender(RCS), Go up to a "cargo telepad" one can be found in cargo and more can be brought from cargo, click the "cargo telepad" with the RCS to calibrate the RCS against that pad. Now go do your mining and use the mining furnace stuff to smelt all of your stuff and then teleport the crate to cargo using the RCS. The crate you teleport must be a "mining crate" and it must be closed when trying to teleport.</li>
+		<li class='tweak'>Made the smelter at mining able to take an ID through the computer so you are able to get points using that as well as the shitty "ore redemption machine"</li>
+		<li class='imageadd'>New crate called mining crate which can be teleported.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>17 January 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscdel'>Removed the ''Old telecoms satelite'' on z level 3.</li>
+		<li class='rscadd'>Replaced it with the prototype station.</li>
+		<li class='rscadd'>Added a cargo telepad to cargo</li>
+		<li class='tweak'>Bar is now wooden.</li>
+		<li class='tweak'>Multiple little fixes on the map.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>17 January 2015</h2>
+	<h3 class='author'>ERIKHANSON updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>You can now warm up donk pockets again.</li>
+		<li class='tweak'>The Eyepatch HUD protects against flash now.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>16 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Darts are ported from Facepunch Station 13! Now you can play darts in bar! Yay!</li>
+		<li class='bugfix'>Fixed butthat sprite</li>
+		<li class='bugfix'>Fixed buttbot sprite</li>
+		<li class='tweak'>Critstate tweaks</li>
+		<li class='tweak'>Defibrillator tweaks. It allows you to heal more damaged people, however it now has a chance of failure.</li>
+		<li class='tweak'>You will always have your suit sensors enabled on spawn with varying settings.</li>
+		<li class='rscadd'>Medical Doctor's lockers will now have handheld crew monitors.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>16 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>Fix plastic flaps being passable by every single object in the game</li>
+		<li class='rscadd'>Object spanning now lasts until the item is no longer being thrown</li>
+		<li class='rscadd'>Grabbing now supports hotkeys and is overall less buggy</li>
+		<li class='tweak'>Santahats are <i>gone</i> and coats/boots are no longer as available as before</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>16 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Female cough sounds!</li>
+		<li class='rscadd'>You will now deal stamina damage to humans when wearing boxing gloves.</li>
+		<li class='bugfix'>Fixed energy gun's in-hand sprites</li>
+		<li class='bugfix'>FIXED BROKEN PUNCHING</li>
+		<li class='bugfix'>Map fixes</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>15 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added back old mining - Thanks Redswandir</li>
+		<li class='tweak'>Made sure the mining changes didn't remove some good stuff</li>
+		<li class='tweak'>Mining gets a ripley too!</li>
+		<li class='bugfix'>Fix an atmos mapping issue</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>15 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Cough sounds now work! Currently only male sounds are there.</li>
+		<li class='rscadd'>Deathwhispers now display themselves to the client.</li>
+		<li class='experiment'>EXPERIMENTAL: New crit state! Now when you get beaten up to 100 overall damage you won't go unconscious automatically. Instead, you'll be able to mutter things at whisper range and do emotes like scream. If you receive 150 overall damage you'll go unconscious and into a "normal" crit. Oh, and you also lose oxygen when in new crit, and muttering words will give you more oxyloss.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>15 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Space and no-grav movement speeds buffed</li>
+		<li class='tweak'>Sugary food can now be consumed as much as any other food</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>14 January 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Re-added the ''sunglasses'' room that was near gravity generator.</li>
+		<li class='tweak'>Bar and kitchen now share access on the two main doors.</li>
+		<li class='tweak'>Escape shuttle modified - Further modifications may be needed.</li>
+		<li class='bugfix'>Scientist can now access maintenance </li>
+		<li class='rscadd'>Escape now branchs, allowing for 4 entrypoint to the escape shuttle.</li>
+		<li class='rscadd'>Added some missing security cameras</li>
+		<li class='rscadd'>Added an area to centcom for admins to prepare events.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>14 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+        <li class='tweak'>"Too many cooks" FUCK YOU TOO MANY COOKS, TOO MANY CHEFS MORE LIKE!</li>
+        <li class='tweak'>You can now plant C4 on people, welp.</li>
+        <li class='tweak'>Added back old computers</li>
+        <li class='tweak'>Cult is back in rotation</li>
+        <li class='rscadd'>Project I.N.D.I.G.O is considered finished, any bugs with it please report them!</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>14 January 2015</h2>
+	<h3 class='author'>ERIKHANSON updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>Fix being able to grab borgs</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>13 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>AIs and borgs can now die</li>
+		<li class='bugfix'>Cook icons now appear on sechud again</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>13 January 2015</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Moved vault to the middle of the bridge, along with a security checkpoint.</li>
+		<li class='rscadd'>Gravity generator moved to engineering, south-west.</li>
+		<li class='rscadd'>Vault's ancient location replaced with clown and mime office.</li>
+		<li class='rscadd'>Soft remodel of the captain's office.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>11 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='experiment'><b>This is your last and only warning! Using fart or scream hotkeys while dead will INSTANTLY kick you.</b></li>
+		<li class='experiment'>Web Client now works! You can play from here <a href="http://www.byond.com/play/107.191.98.245:12531">http://www.byond.com/play/107.191.98.245:12531</a> - It's highly experimental and not really supported so GL!</li>
+		<li class='bugfix'>Possibly fixed a bug with the weird vent pump things used in the I.N.D.I.G.O room and the toxins mix chamber but probably not.</li>
+		<li class='bugfix'>Map fixes for I.N.D.I.G.O - Added the super matter shard back there too</li>
+		<li class='bugfix'>Few security bug fixes thanks to 'ERIKHANSON'.</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>11 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>Major speed improvement during plasma floods</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>10 January 2015</h2>
+	<h3 class='author'>Willox updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>VIew no longer lags behind when observing players</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>10 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Add crystal glass to the INDIGO room which is more resistant to temps and doesn't pass heat easily</li>
+		<li class='rscadd'>Sanitize away missions content to not have fucking stupid shit</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>8 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>GRAYTIDING</li>
+		<li class='rscadd'>New windows used in Project INDIGO with super temp resistance</li>
+		<li class='rscadd'>The changelog now pops out when updated</li>
+		<li class='rscadd'>Ported Ragin Mages</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>8 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscdel'>Removed the possibility of "Rampant Brand Intelligence" event from occuring. (All vending machines turning evil, powerful mobs with a chance of blowing up? No thank you)</li>
+		<li class='rscadd'>Added a new feature to duct tape item - taping someone's (or your) mouth shut! Makes it useful to carry around for antagonists if they want to shut someone up quickly.</li>
+		<li class='rscadd'>Added duct tape to our current map. You can also make it in an autolathe.</li>
+		<li class='rscadd'>Added pocket blade to the map. The location is secret!<li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>8 January 2015</h2>
+	<h3 class='author'>Crystalwarrior160 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Duct tapes and their associated recipes are back! Expect more fun stuff with duct tape.</li>
+		<li class='rscadd'>Screaming will give you 5 oxyloss. You can scream yourself unconscious now!</li>
+		<li class='rscadd'>Ported Space Funeral mobs from FPSS13. They're pants-shittingly terrifying.</li>
+		<li class='bugfix'>Fixed Mateba and Syndicate Pistol sprites disappearing on certain occasions</li>
+		<li class='tweak'>Added anti-spam to emotes - now you can only make an emote every 0.5 seconds</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>8 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='bugfix'>FIX HARDSUITS NOT BEING ABLE TO USE OXYGEN TANK!</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>8 January 2015</h2>
+	<h3 class='author'>Jamie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>E-magable Clown shoes</li>
+		<li class='rscadd'>Remove shit vox and put the old vox back</li>
+		<li class='rscadd'>Warm donk pockets</li>
+		<li class='rscadd'>Project I.N.D.I.G.O</li>
+		<li class='rscadd'>AWAY MISSIONS</li>
+		<li class='tweak'>Buffed Mining ore rates</li>
+		<li class='tweak'>Undo some shitty TG delays on doing "stuff"</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>3 January 2015</h2>
+	<h3 class='author'>Jamie Hankins updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Remove Adv Tasers from Sec loadout</li>
+		<li class='tweak'>Advanced tasers spawn in security lockers</li>
+		<li class='tweak'>Allow hardsuits and spacesuits to carry oxygen tanks</li>
+		<li class='tweak'>Ported selling of more then just plasma to central command</li>
+		<li class='rscdel'>Remove table climbinb</li>
+		<li class='tweak'>Remove Superdark</li>
+		<li class='tweak'>Give the detective revolver and shotgun stun again</li>
+		<li class='rscadd'>Port Goodcurity</li>
+		<li class='rscadd'>Hotkey for screaming (ctrl +s) and a hotkey for farting (ctrl + f)</li>
+		<li class='rscadd'>Added fart, burp and superfart</li>
+		<li class='rscdel'>Remove Security borgs</li>
+		<li class='experiment'>Started from scratch on a newer TG commit, ported some things. Things missing should be reported on the issue tracker</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>30 December 2014</h2>
+	<h3 class='author'>Kokojo updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Vault moved upwards, security secpoint in it's place.</li>
+		<li class='rscadd'>HoS office fixed.</li>
+		<li class='rscadd'>Chemistry has now shutters instead of windoors.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>Before 29 December 2014</h2>
+	<h3 class='author'>Crystal updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Lawyers have brig access back.</li>
+		<li class='rscadd'>New Item : Duct tape.</li>
+		<li class='tweak'>Tools can fit in belts again</li>
+		<li class='rscdel'>Malfunction removed from rotation until a bug is fixed.</li>
+</div>
+
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>7 December 2014</h2>
+	<h3 class='author'>Scooter updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Your ass is not ready to blast... On the title screen.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>5 December 2014</h2>
+	<h3 class='author'>Scooter updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Fixed the changelog that was broken because no one else was going to.</li>
+		<li class='rscadd'>Added more admins to the changelog.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>Sometime in December 2014</h2>
+	<h3 class='author'>Admiral Hippie updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Changed sounds, replaced sounds, good luck finding all of them.</li>
+		<li class='rscadd'>Modified the syndie base.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>1 December 2014</h2>
+	<h3 class='author'>Mport updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>The AI upload has been moved to the AI sat, bridge currently has a hole where it was this will be filled in</li>
+		<li class='rscadd'>Readded Cargo Techs</li>
+	</ul>
+</div>
+
+
+<div class='commit sansserif'>
+	<h2 class='date'>29 November 2014</h2>
+	<h3 class='author'>Mport updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>The changelog's images now function properly and the changelog will pop up when there are changes</li>
+		<li class='tweak'>Emitters once again run off of the APC and not the powernet</li>
+		<li class='bugfix'>Airlocks run off of equipment power</li>
+		<li class='rscdel'>The bolt light wire no longer exists</li>
+		<li class='rscadd'>Airlocks will buzz at you if you dont have the required access and you attempt to open them</li>
+		<li class='rscadd'>Added glass blast doors for the exterior of the brig cells, these doors will open when the timer reaches 0. </br>They can be broken by hitting them with things and repaired by using sheets of r-glass on them.</li>
+		<li class='tweak'>on_border objects removed, halfwindows/windowdoors/firedoors were affected. </br>Windowdoors were replaced by an ID locked shutter, windows are now all fulltile.</li>
+	</ul>
+</div>
+
+<div class="commit sansserif">
+	<h2 class="date">23 November 2014</h2>
+	<h3 class="author">Mocheeze updated:</h3>
+	<ul class="changes bgimages16">
+		<li class="rscadd">Some of the new ambiences implemented</li>
+		<li class="rscadd">Barber room and equipment. Job in the works!</li>
+		<li class="experiment">Catwalk array surrounding some areas of the station.</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>22 November 2014</h2>
+	<h3 class='author'>Mport updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Space Dust readded</li>
+		<li class='bugfix'>Access levels are no longer using the expanded list</li>
+		<li class='rscdel'>Removed superdarkness</li>
+		<li class='rscdel'>Removed department security</li>
+		<li class='imageadd'>Brutepack/Ointment (CrystalWarrior)</li>
+		<li class='imageadd'>Blood splatter icons edited (CrystalWarrior)</li>
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>6 November 2014</h2>
+	<h3 class='author'>Scooterkid74 updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Compressed various sounds down with no quality loss. More to come.</li>
+		<li class='tweak'>Fixed the changelog.</li>
+		<li class='rscadd'>Added sounds for lighting going out and equipment powering down when the APC hits specific power percentages.</li>
+		<li class='rscadd'>Spamming something /me will give no warnings and will mute only from using /me after a certain amount of same messages.</li>
+		</ul>
+	<h3 class='author'>Redswandir updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added new scream sounds.</li>
+
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>26 October 2014</h2>
+	<h3 class='author'>Redswandir updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Fixed ass blasting: you now no longer take damage for someone else's face getting ample amounts of that ass
+		<li class='rscdel'>Removed sec borgs for a number of reasons, but the big one, and in no small part is due to massive shittery. You can now become one via a reset board if you must valid salid
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>25 October 2014</h2>
+	<h3 class='author'>Redswandir updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>The Big Mining Update is here and done! Blessed be!
+		<li class='rscadd'>Map: Removed the mining asteroid, and replaced it with more asteroids. The old one may still be around somewhere...
+		<li class='rscadd'>Map: Labor Camp is now in the asteroid field, and just east of the asteroid field beacon is a small mining outpost for miners.
+		<li class='rscadd'>Map: Added Space Beacons around the station, for ease of space travel.
+		<li class='rscadd'>Map: Fleshed out the Mining Dock, removed the mining shuttle but added in mecha recharge bays for every miner.
+		<li class='rscadd'>Every miner now gets a hand tele and a mining jetpack to quickly traverse from the asteroid field to the station.
+		<li class='rscadd'>Mining Ore rates now variable, ranging from the current 3 to a new high of 7!
+		<li class='rscadd'>Added "new" ores, so get used to seeing lots of Bananium, Mimesteinium, and Adamantine in the asteroid field.
+		<li class='rscadd'>Since Mimesteinium, and Adamantine have no real use, you can now sell refined minerals and get points! Things like metal and glass will give you a little amount while plasma, uranium and diamonds more so. If you want to be cruel, mine a bunch of Bananium or Mimesteinium and sell it in stacks of 50 for mad dosh.
+		<li class='rscadd'>Big blast doors are still fucked: so toxins has old ones for a little while so you can test bombs without nuking yourself.
+		<li class='rscadd'>Some small assorted map changes as well, either for aesthetics or for ease of use: escape arm is now more visible to AIs and there are more air alarms in general, for one example.
+		<li class='rscadd'>Increased job limits of miners up to 4, from 3, and of cyborgs up to 3, from 1.
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>28 September 2014</h2>
+	<h3 class='author'>Redswandir updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Mining fixes, and some blast door replacements.
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>9 September 2014</h2>
+	<h3 class='author'>Redswandir updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Changed how meteor and radiation events work: they are much more deadly!
+		<li class='tweak'>Tweaked how gun turrets work:
+		<li class='rscadd'>Changed the map around. Check the thread for details.
+	</ul>
+		<h3 class='author'>scooterkid updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='rscadd'>Added in Facepunch's Achivement's system as a framework. There is nothing to earn (yet)
+	</ul>
+</div>
+
+<div class='commit sansserif'>
+	<h2 class='date'>7 September 2014</h2>
+	<h3 class='author'>Redswandir updated:</h3>
+	<ul class='changes bgimages16'>
+		<li class='tweak'>Minor tweaking to let the game accommodate more than 7 zlevels.
+		<li class='tweak'>Tweaked how the Singularity grows: once it grows to stage 5, it will begin to consume floors.
+		<li class='rscadd'>Changed the map around. Check the thread for details.
+		<li class='rscadd'>REPLACES SHITTY VOX WITH GOOD VOX, THIS IS A GREAT DAY FOR MANKIND
+	</ul>
+</div>
+
+
+<div class='test2	'>
+<b><center><font color="black">Special thanks to: GoonStation 13 Development Team, /TG/ Station coders, Unbound Travels coders, Facepunch Station 13 coders, vgstation13 and players like you!</font></center></b>
+</div>
+
+<br>
+<center>
+<p class="lic"><a name="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="88x31.png" alt="Creative Commons License" /></a><br><i>Except where otherwise noted, Goon Station 13 is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 License</a>.<br>Rights are currently extended to <a href="http://forums.somethingawful.com/">SomethingAwful Goons</a> only.</i></p>
+<p class="lic">Some icons by <a href="http://p.yusukekamiyamane.com/">Yusuke Kamiyamane</a>. All rights reserved. Licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.</p>
+</center></td></tr></table>
+</body>
+</html>
