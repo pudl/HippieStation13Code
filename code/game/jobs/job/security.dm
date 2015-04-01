@@ -37,9 +37,8 @@ Head of Security
 	else
 		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/head_of_security(H), slot_w_uniform)
 
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(H), slot_shoes)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/color/brown(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/hos/trenchcoat(H), slot_wear_suit)
-	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/color/black/hos(H), slot_gloves)
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/HoS/beret(H), slot_head)
 	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/security/sunglasses(H), slot_glasses)
 	H.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/gun/pistol(H), slot_s_store)
@@ -87,10 +86,9 @@ Warden
 	else
 		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/warden(H), slot_w_uniform)
 
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots(H), slot_shoes)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/color/brown(H), slot_shoes)
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/warden(H), slot_wear_suit)
 	H.equip_to_slot_or_del(new /obj/item/clothing/head/warden(H), slot_head)
-	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/color/black(H), slot_gloves)
 	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/security/sunglasses(H), slot_glasses)
 	H.equip_to_slot_or_del(new /obj/item/device/flash/handheld(H), slot_l_store)
 	H.equip_to_slot_or_del(new /obj/item/key/security(H), slot_r_store)
